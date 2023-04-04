@@ -12,8 +12,6 @@ $script = {
 	
 	Add-Type -AssemblyName 'System.Security'
 	New-Variable -Name VSCELicenseMap -Value @{
-		'2013'  = 'Licenses\E79B3F9C-6543-4897-BBA5-5BFB0A02BB5C\06177'
-		'2015'  = 'Licenses\4D8CFBCB-2F6A-4AD2-BABF-10E28F6F2C8F\07078'
 		'2017'  = 'Licenses\5C505A59-E312-4B89-9508-E162F8150517\08878'
 		'2019'  = 'Licenses\41717607-F34E-432C-A138-A3CFD7E25CDA\09278'
 	} -Option Constant
