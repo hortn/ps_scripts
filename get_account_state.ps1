@@ -5,7 +5,7 @@ param ([array]
 $user
 )
 
-$acc_info = $user |Get-ADUser -Properties * | Select-Object Enabled, LockedOut, SamAccountName
+$acc_info = $user |Get-ADUser -Properties Enabled, LockedOut, SamAccountName | Select-Object Enabled, LockedOut, SamAccountName
 
 foreach ($temp in $acc_info){
 
